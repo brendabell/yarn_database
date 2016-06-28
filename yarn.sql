@@ -12,6 +12,8 @@ CREATE TABLE `yarn_yarn` (
   `stitches_per_10cm` decimal(2,1) NOT NULL,
   `needle_size` varchar(128),
   `hook_size` varchar(128),
+  `meters` int(11),
+  `grams` int(11),
   PRIMARY KEY (`id`),
   UNIQUE KEY `yarn_name` (`name`),
   KEY `yarn_manufacturer` (`manufacturer`)
@@ -36,6 +38,10 @@ CREATE TABLE `yarn_swatch` (
   `mast_tension` int(11) NOT NULL,
   `rows_per_10cm` decimal(2,1) NOT NULL,
   `stitches_per_10cm` decimal(2,1) NOT NULL,
+  `rows` int(11) NOT NULL,
+  `stitches` int(11) NOT NULL,
+  `grams` decimal(2) NOT NULL,
+  `blocked` smallint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `swatch_yarn` (`yarn_id`),
   CONSTRAINT `swatch_yarn` FOREIGN KEY (`yarn_id`) REFERENCES `yarn_yarn` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
