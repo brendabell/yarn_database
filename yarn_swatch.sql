@@ -1,5 +1,5 @@
 CREATE TABLE `yarn_swatch` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `yarn_id` int(11) NOT NULL,
   `machine` enum('White 1602','Singer 2200','Brother KH860','Studio SK155','Silver Reed SK860') NOT NULL,
   `stitch_size` decimal(2,1) NOT NULL,
