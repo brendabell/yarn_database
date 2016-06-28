@@ -1,5 +1,5 @@
 CREATE TABLE `yarn_content` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `yarn_id` int(11) NOT NULL,
   `fiber` enum('acrylic','alpaca','cotton','linen','mohair','rayon','silk','wool') NOT NULL,
   `percentage` varchar(128) NOT NULL,
