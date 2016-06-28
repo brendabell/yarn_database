@@ -1,5 +1,5 @@
 CREATE TABLE `yarn_yarn` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
   `manufacturer` varchar(128) NOT NULL,
   PRIMARY KEY (`id`),
