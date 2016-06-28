@@ -1,3 +1,9 @@
+DROP TABLE `yarn_swatch`;
+
+DROP TABLE `yarn_content`;
+
+DROP TABLE `yarn_yarn`;
+
 CREATE TABLE `yarn_yarn` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
